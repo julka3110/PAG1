@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:fme="http://www.safe.com/gml/fme" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.safe.com/gml/fme" elementFormDefault="qualified">
+<import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd"/>
+<element name="NewFeatureType" type="fme:NewFeatureTypeType" substitutionGroup="gml:_Feature"/>
+<complexType name="NewFeatureTypeType">
+<complexContent>
+<extension base="gml:AbstractFeatureType">
+<sequence>
+<element name="a_year" minOccurs="0" type="long"/>
+<element name="a_i_num" minOccurs="0" type="long"/>
+<element name="adr_for" minOccurs="0" type="string"/>
+<element name="area_type" minOccurs="0" type="string"/>
+<element name="site_type" minOccurs="0" type="string"/>
+<element name="silvicult" minOccurs="0" type="string"/>
+<element name="forest_fun" minOccurs="0" type="string"/>
+<element name="stand_stru" minOccurs="0" type="string"/>
+<element name="rotat_age" minOccurs="0" type="long"/>
+<element name="sub_area" minOccurs="0" type="double"/>
+<element name="prot_categ" minOccurs="0" type="string"/>
+<element name="species_cd" minOccurs="0" type="string"/>
+<element name="part_cd" minOccurs="0" type="string"/>
+<element name="spec_age" minOccurs="0" type="long"/>
+<element name="nazwa" minOccurs="0" type="string"/>
+<element ref="gml:surfaceProperty" minOccurs="0"/>
+<element ref="gml:multiSurfaceProperty" minOccurs="0"/>
+</sequence>
+</extension>
+</complexContent>
+</complexType>
+</schema>
